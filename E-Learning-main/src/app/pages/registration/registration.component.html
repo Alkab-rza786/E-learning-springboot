@@ -1,0 +1,150 @@
+<div class="slider">
+    <div class="slides">
+        <div class="slide active">
+            <img src="https://media.vitecoelearning.eu/vitecoelearning.eu/wp-content/uploads/2023/09/e-learning-1-fb-EN.jpg" alt="Image 1">
+            <div class="caption">Hello</div>
+            <div class="description">Description for Image 1</div>
+        </div>
+        <div class="slide">
+            <img src="https://www.shutterstock.com/image-photo/laptop-report-friends-learning-library-600nw-2475778113.jpg" alt="Image 2">
+            <div class="caption">This is the caption for Image 2</div>
+            <div class="description">Description for Image 2</div>
+        </div>
+        <div class="slide">
+            <img src="https://wp.pgames.guru/wp-content/uploads/2022/06/elearning_marketplaces-1.jpg" alt="Image 3">
+            <div class="caption">This is the caption for Image 3</div>
+            <div class="description">Description for Image 3</div>
+        </div>
+        <div class="slide">
+            <img src="https://media.licdn.com/dms/image/v2/D5612AQFFNnSIjBBSyA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1724153872794?e=2147483647&v=beta&t=r4AbOkWLH9WekXz4zYBw2Pi6Pjvm_Znelb4fw4IVzaU" alt="Image 4">
+            <div class="caption">This is the caption for Image 4</div>
+            <div class="description">Description for Image 4</div>
+        </div>
+        <div class="slide">
+            <img src="https://www.signupgenius.com/cms/socialMediaImages/study-tips-college-students-facebook-1200x630.png" alt="Image 5">
+            <div class="caption">This is the caption for Image 5</div>
+            <div class="description">Description for Image 5</div>
+        </div>
+    </div>
+    <div class="arrow left" (click)="prevSlide()">&#10094;</div>
+    <div class="arrow right" (click)="nextSlide()">&#10095;</div>
+</div>
+
+  
+  <!-- Content Section -->
+  <section class="container">
+    <!-- Image and Description -->
+    <div class="image__box">
+      <div class="image__container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk7u5Ro_oHc8vtuTnvi77EJnbBaJlNekFzyxNfLK7YDqolECoK0oPkKg924NqYHw9HStI&usqp=CAU" alt="E-Learning" width="500" height="200" />
+      </div>
+      <div class="description__container">
+        <h1>E-Learning</h1>
+        <h2>Project eLearning brings together the services of all departments under one umbrella.</h2>
+        <p>
+          Project E-Learning is an initiative aimed at creating a unified platform where all services and interactions between citizens and government departments can occur efficiently. By leveraging technology, it reduces the hassle of physical administration processes and allows faster access to information and services, promoting a knowledge-based society.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Registration Form -->
+    <div class="form__container">
+      <h2>STUDENT REGISTRATION PAGE</h2>
+      <form [formGroup]="register" (ngSubmit)="handleSubmit()" id="registrationForm">
+        <input type="text" id="fullname" formControlName="fullname"  placeholder="Full Name" required />
+        <input type="password" id="password" formControlName="password" placeholder="Password" required />
+        <input type="text" id="address" formControlName="address" placeholder="Address" required />
+        <input type="email" id="email" formControlName="email" placeholder="Email ID" required />
+        <input type="tel" id="phone" formControlName="phone" placeholder="Phone No" required />
+        <input type="text" id="course" formControlName="course" placeholder="Course" required />
+        <input type="date" id="date" formControlName="date" required />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  
+    <!-- Registration Form Section -->
+<section class="container">
+    <h2>College Connect</h2>
+    <div class="info__container">
+      <div class="info__box" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+        <h3>E-Learning</h3>
+        <br>
+        <img src="https://img.freepik.com/premium-photo/business-professional-engaged-e-learning-laptop-device_994764-60323.jpg?semt=ais_hybrid" alt="E-Learning" />
+        <p>Project E-Learning initiated to bring together the services of all the departments under one single umbrella.it reduces the hassle of physical administration processes and allows faster access to information and services, promoting a knowledge-based society.</p>
+    </div>
+      <div class="info__box" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+        <h3>Gallery</h3>
+        <br>
+        <img src="https://t3.ftcdn.net/jpg/05/07/66/58/360_F_507665856_dFXIKJJ4SwROG0df8GNPBhqsZV44p6jn.jpg" alt="Gallery" />
+        <p>Project E-Learning initiated to bring together the services of all the departments under one single umbrella.</p>
+      </div>
+      <div class="info__box" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+        <h3>Contact</h3>
+        <img src="https://i.pinimg.com/736x/14/28/e7/1428e7756c2f08bc105c7741a1f16e52.jpg" alt="">
+        <h3>Suppliers Directory</h3>
+        <p><strong>Harshith.M</strong></p>
+        <p>(+91)9945673510</p>
+        <p><strong>Mohammed Aziz</strong></p>
+        <p>(+91)9738054647</p>
+        <p><strong>Jeevan.M.Anand</strong></p>
+        <p>(+91)9945753547</p>
+      </div>
+      <div class="info__box" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+        <h3>Get in Touch</h3>
+        <br>
+        <img src="https://cdn.vectorstock.com/i/preview-1x/87/85/get-in-touch-button-with-hand-cursor-can-be-used-vector-29008785.jpg" alt="">
+        <p><strong>Email:</strong></p>
+        <p>mohammedaziz&#64;gmail.com</p>
+        <p><strong>Address:</strong></p>
+        <p>Hebbal, Bangalore, Karnataka</p>
+        <p><strong>Phone:</strong></p>
+        <p>(+91)9738054647</p>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+
+  <footer class="unique-footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+            <h2 class="footer-logo">E-Learning</h2>
+            <p>Your gateway to limitless knowledge. Explore, learn, and grow with the best online courses designed for your success.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section links">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section contact-form">
+            <h3>Get in Touch</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <textarea placeholder="Your Message" rows="3"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 E-Learning. All rights reserved.</p>
+    </div>
+</footer>

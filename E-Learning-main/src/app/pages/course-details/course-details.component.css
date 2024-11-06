@@ -1,0 +1,337 @@
+/* Overall layout */
+.courses-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  /* Flexbox layout for the content and courses-offered sections */
+  .course-content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .course-info, .courses-offered {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgb(143, 132, 132);
+  }
+  
+  /* Heading styles */
+  .course-heading, .courses-offered h4 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  /* List and description styling */
+  .course-list, .courses-offered ul, .archive-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  
+  .course-list li, .courses-offered li, .archive-section li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  /* Description paragraphs */
+  .course-description, .offered-description, .archive-description {
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Archive section */
+  .archive-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgb(143, 132, 132);
+  }
+  
+  .archive-section h4 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .archive-section ul li {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Adjustments for responsive design */
+  @media (max-width: 768px) {
+    .course-content-container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2980b9;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    color: #34495e;
+  }
+  
+  /* Scroll Effect */
+  .courses-section {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  
+  .course-info, .courses-offered, .archive-section {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+/* Course Page Styles */
+.course-page {
+    padding: 40px 20px;
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Page title */
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  /* Courses Container */
+  .courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  /* Individual Course Cards */
+  .course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgb(143, 132, 132);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  /* Hover effect for the course card */
+  .course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Course Image */
+  .course-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #2980b9;
+    transition: all 0.3s ease;
+  }
+  
+  /* Course Content */
+  .course-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Course Title */
+  .course-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  /* Course Description */
+  .course-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+  
+  /* Hover effects for text */
+  .course-card:hover .course-title {
+    color: #2980b9;
+  }
+  
+  .course-card:hover .course-description {
+    color: #34495e;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .courses-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Adding custom fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  
+  /* Footer General Styles */
+.unique-footer {
+    background: linear-gradient(135deg, #6A11CB, #2575FC);
+    color: #fff;
+    padding: 60px 40px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.footer-section p {
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Quick Links Section */
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Contact Form Section */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FFC107;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}

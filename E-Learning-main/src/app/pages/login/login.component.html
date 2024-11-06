@@ -1,0 +1,88 @@
+<div class="login-content">
+    <h1>Welcome Back!</h1>
+    <h2 class="join">Join the Community of Innovators</h2>
+    <p>At <strong>E-Learning</strong>, we believe that great ideas can change the world. Whether you're here to collaborate, learn, or take your skills to the next level, we have the resources and community to support your journey.</p>
+
+    <div class="benefits">
+        <div class="benefit">
+            <i class="fas fa-key"></i>
+            <h3>Unlock Your Potential</h3>
+            <p>Gain access to exclusive content, tutorials, and tools designed to help you excel in your field.</p>
+        </div>
+        <div class="benefit">
+            <i class="fas fa-users"></i>
+            <h3>Connect with Like-Minded Individuals</h3>
+            <p>Join a vibrant community of thinkers, creators, and innovators. Share your ideas and learn from others.</p>
+        </div>
+        <div class="benefit">
+            <i class="fas fa-bell"></i>
+            <h3>Stay Updated</h3>
+            <p>Be the first to know about our latest features, events, and opportunities tailored just for you.</p>
+        </div>
+    </div>
+
+    <h2>Ready to Get Started?</h2>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="logoName">Sign-in</div>
+        <form [formGroup]="data" (ngSubmit)="handleSubmit()" class="inputs">
+            
+            <label>Email</label>
+            <input type="text" placeholder="Enter your email" id="email" formControlName="userId">
+            <label>Password</label>
+            <input type="password" placeholder="Maximum 6 char" id="password" formControlName="password">
+            <button type="submit" value="submit" >Sign In</button>
+            <!-- <input type="submit" value="Submit" /> -->
+        </form>
+    </div>
+</div>
+<div class="forgot-password">
+    <h2>Forgot Your Password?</h2>
+    <p>Enter your registered email below, and we’ll send you instructions to reset your password.</p>
+    <input type="email" placeholder="Enter your registered email" />
+    <button>Submit</button>
+</div>
+
+<footer class="unique-footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+            <h2 class="footer-logo">E-Learning</h2>
+            <p>Your gateway to limitless knowledge. Explore, learn, and grow with the best online courses designed for your success.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section links">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Admin</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section contact-form">
+            <h3>Get in Touch</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <textarea placeholder="Your Message" rows="3"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 E-Learning. All rights reserved.</p>
+    </div>
+</footer>

@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://www.signupgenius.com/cms/socialMediaImages/study-tips-college-students-facebook-1200x630.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.join {
+    color: #041bed;
+}
+
+.logo {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0M74p6bAmkdVuPrHgKHaPO6l_CyCqhp7E3Sw0Ir6P_LE84giUg1CW_oPhl2FOKv51wyw&usqp=CAU) no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    background-color: rgb(55, 141, 217);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgb(143, 132, 132);
+    width: 400px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 40px auto;
+}
+
+.login-image {
+    display: block;
+    margin: 20px auto;
+    max-height: 100px;
+    width: auto;
+}
+
+.logoName {
+    color: rgb(0, 0, 0);
+}
+
+.inputs {
+    text-align: left;
+    margin-top: 10px;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 7px 8px rgb(143, 132, 132);
+    border-radius: 10px;
+    border: none;
+}
+
+#role {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+
+button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 7px 8px rgb(143, 132, 132);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; 
+}
+
+.benefit {
+    flex: 1 1 30%; 
+    margin: 10px;
+    padding: 20px;
+    background: white; 
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(6, 2, 222, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+.benefit i {
+    font-size: 2em;
+    color: #041bed; 
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(55, 141, 217);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgb(143, 132, 132);
+    width: 400px;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+
+.forgot-password h2 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.forgot-password p {
+    color: #080707;
+    margin: 10px 0;
+}
+
+.forgot-password input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(143, 132, 132, 0.3);
+    outline: none;
+}
+
+.forgot-password input:focus {
+    border-color: #1303f0;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.forgot-password button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(143, 132, 132, 0.5);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.forgot-password button:hover {
+    background-color: #0056b3;
+}
+
+.unique-footer {
+    background: linear-gradient(135deg, #6A11CB, #2575FC);
+    color: #fff;
+    padding: 60px 40px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.footer-section p {
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FFC107;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
